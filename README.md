@@ -8,4 +8,4 @@ Page hosted at : https://uncharted-andreastsar.netlify.app/
 3. JavaScript
 4. SCSS (SASS)
 
-<img src="uncharted-project.png" alt="Alt Text" width="1000"/>
+<img src="uncharted-project.png" alt="Image of Uncharted Lading Page" width="1000"/>

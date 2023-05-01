@@ -1,0 +1,77 @@
+// Buttons
+
+.btn,
+.btn:link,
+.btn:visited {
+   display: inline-block;
+
+   text-decoration: none;
+   font-weight: 500;
+   font-size: 1.8rem;
+
+   padding: 1.6rem 3.2rem;
+   border-radius: 0.9rem;
+   font-weight: 600;
+
+   transition: all 0.4s ease-in-out;
+
+   border: none;
+   cursor: pointer;
+}
+
+.btn {
+   &--cta {
+      border-radius: 0.9rem;
+      background-color: rgba($color-white-light, 0.7);
+      color: $color-primary;
+
+      &:hover {
+         background-color: $color-primary;
+         color: $color-white-light;
+
+         transform: translateY(-0.3rem);
+         box-shadow: 0 0 1rem 1rem $color-white;
+      }
+
+      &:active {
+         transform: translateY(-0.1rem);
+         box-shadow: 0 0 0.5rem 0.5rem $color-white;
+      }
+   }
+
+   &--info {
+      border-radius: 0.9rem;
+      background-color: rgba($color-white-light, 0.7);
+
+      color: $color-primary;
+
+      &:hover {
+         color: $color-white-light;
+         background-color: rgba($color-primary, 0.7);
+
+         transform: translateY(-0.3rem);
+         box-shadow: 0 0 1rem 1rem $color-white;
+      }
+
+      &:active {
+         transform: translateY(-0.1rem);
+         box-shadow: 0 0 0.5rem 0.5rem $color-white;
+      }
+   }
+
+   &--animated {
+      animation: buttonUpDown 2.5s ease-in-out;
+   }
+
+   &--form {
+      align-self: end;
+      padding: 1.2rem 2.4rem;
+      margin-top: 1.8rem;
+      color: $color-primary;
+      margin: 3rem 2rem;
+
+      &:hover {
+         box-shadow: 0 0 0.5rem 0.8rem $color-primary;
+      }
+   }
+}

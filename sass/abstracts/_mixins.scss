@@ -1,0 +1,11 @@
+// Stroked text
+@mixin strokedText {
+   color: $color-white;
+   text-shadow: -1px -1px 0 $color-primary, 2px -1px 0 $color-primary,
+      -1px 2px 0 $color-primary, 2px 2px 0 $color-primary;
+
+   @media (max-width: 44em) {
+      text-shadow: -1px -1px 0 $color-primary, 1px -1px 0 $color-primary,
+         -1px 1px 0 $color-primary, 1px 1px 0 $color-primary;
+   }
+}

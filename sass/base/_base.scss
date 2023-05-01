@@ -1,0 +1,73 @@
+* {
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+}
+
+body,
+html {
+   width: 100%;
+   overflow-x: hidden;
+}
+
+html {
+   font-size: 62.5%;
+}
+
+.container {
+   max-width: 120rem;
+   margin: 0 auto;
+   padding: 0 3.2rem;
+   // background-color: violet;
+}
+
+// Headings
+.heading-primary {
+   font-size: 7.4rem;
+   font-weight: 700;
+   letter-spacing: 1rem;
+
+   &--stroked {
+      margin-top: 4.8rem;
+      @include strokedText;
+      animation: slideInLeft 2.5s ease-in-out;
+   }
+}
+
+.subheading {
+   display: block;
+   font-size: 2.4rem;
+   font-weight: 600;
+   text-transform: uppercase;
+   margin-bottom: 3.2rem;
+   letter-spacing: 0.75px;
+   text-align: center;
+}
+
+/* Grid */
+.grid {
+   display: grid;
+   row-gap: 9.6rem;
+   column-gap: 6.4rem;
+}
+
+.grid:not(:last-child) {
+   margin-bottom: 9.6rem;
+}
+
+.grid--2-cols {
+   grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+   grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+   grid-template-columns: repeat(4, 1fr);
+}
+
+// Margins
+.margin-lg-top {
+   margin-top: $margin-section-top;
+}

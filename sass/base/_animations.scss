@@ -1,0 +1,85 @@
+@keyframes changeBackgroundImage {
+   0% {
+      background-image: url("https://images.unsplash.com/photo-1504716325983-cb91edab7e7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80");
+   }
+
+   25% {
+      background-image: url("https://images.unsplash.com/photo-1510074232337-05d50fa189ba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+   }
+
+   50% {
+      background-image: url("https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+   }
+
+   75% {
+      background-image: url("https://images.unsplash.com/photo-1662740600740-46d992377b1c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80");
+   }
+
+   100% {
+      background-image: url("https://images.unsplash.com/photo-1504716325983-cb91edab7e7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80");
+   }
+}
+
+@keyframes slideInLeft {
+   0% {
+      opacity: 0.5;
+      transform: translateX(-10rem);
+      color: $color-primary;
+   }
+
+   50% {
+      transform: translateX(5rem);
+      color: $color-secondary;
+   }
+
+   100% {
+      opacity: 1;
+      transform: translateX(0);
+   }
+}
+
+@keyframes slideInRight {
+   0% {
+      opacity: 0.5;
+      transform: translateX(10rem);
+      color: $color-secondary;
+   }
+
+   50% {
+      transform: translateX(-5rem);
+      color: $color-primary;
+   }
+
+   100% {
+      opacity: 1;
+      transform: translateX(0);
+   }
+}
+
+@keyframes buttonUpDown {
+   0% {
+      transform: translateY(2.5rem);
+   }
+
+   60% {
+      transform: translateY(-2.5rem);
+   }
+
+   100% {
+      transform: translateY(0);
+   }
+}
+
+@keyframes card-highlighted {
+   0% {
+      box-shadow: 0 0 0.5rem 0 rgba(255, 255, 255, 0.8);
+   }
+
+   50% {
+      box-shadow: 0 0 2.5rem 0 rgba(255, 255, 255, 0.8);
+   }
+
+   100% {
+      box-shadow: 0 0 0.5rem 0 rgba(255, 255, 255, 0.8);
+   }
+}
